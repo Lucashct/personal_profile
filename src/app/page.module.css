@@ -54,4 +54,95 @@
 .presentationDiv {
   margin: auto;
   color: #212121;
+  width: 40%;
+}
+
+.line1 {
+  width: 72%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.line2 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.lastLine {
+  border-right: 2px solid transparent;
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: -10px
+}
+
+.typeAnimationLine1 {
+  animation: typingLine1 1.5s steps(40)  normal;
+}
+
+.typeAnimationLine2 {
+  animation: typingLine2 2.5s steps(40) normal;
+}
+
+.typeAnimationLine3 {
+  animation: typingLine3 5s steps(40) normal,
+  blinkCursor 600ms steps(100) 5s infinite;
+}
+
+.hiddenLine {
+  display: none;
+}
+
+@keyframes typingLine1 {
+  from {
+    width: 0;
+  } to {
+    width: 30em;
+  }
+}
+
+@keyframes typingLine2 {
+  0% {
+    width: 0em;
+  } 
+
+  50% {
+    width: 0em;
+  }
+
+  100% {
+    width: 30em;
+  }
+}
+
+@keyframes typingLine3 {
+  0% {
+    width: 0em;
+  } 
+  
+  50% {
+    width: 0em;
+  }
+
+  100% {
+    width: 30em;
+  }
+}
+
+@keyframes hiddenLine {
+  from {
+    display: none;
+  } to {
+    display: block;
+  }
+}
+
+@keyframes blinkCursor {
+  0% {
+    border-right: 2px solid rgba(0, 0, 0, 0.75); 
+  }
+  100% {
+    border-right-color: transparent;
+  }
 }
