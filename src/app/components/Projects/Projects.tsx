@@ -5,7 +5,7 @@ import styles from './projects.module.css'
 
 library.add(faDiagramProject, faLink)
 
-export default function() {
+export default function Projects() {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
