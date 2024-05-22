@@ -1,0 +1,41 @@
+.container {
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: left;
+  margin-left: 2%;
+}
+
+.container p {
+  text-align: left;
+}
+
+.resume {
+  margin: auto;
+  width: 65%;
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1150px) {
+  .resume {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .resume {
+    font-size: 12px;
+  }
+}

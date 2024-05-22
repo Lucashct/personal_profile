@@ -1,0 +1,150 @@
+.container {
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionsContainer {
+  background: #f0f0f0;
+  box-shadow: 0px 0px 5px 0 rgba(240, 240, 240, 0.493);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+}
+
+.descriptionsContainer h1 {
+  margin: 0.3em;
+  font-size: 3em;
+}
+
+.checkpoint div {
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+.descriptionsContainer h2 {
+  margin-bottom: 0.5em;
+}
+
+.title {
+  text-align: left;
+  width: 100%;
+  margin-left: 3.2%;
+}
+
+.timeLineContainer {
+  margin: 5em auto;
+  max-width: 34.14em;
+}
+
+.checkpoint {
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.checkpoint p {
+  line-height: 27px;
+}
+
+.checkpoint:nth-child(odd) {
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(17em);
+}
+
+.checkpoint:nth-child(even) {
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translateX(-17em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+  content: '';
+  background: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before {
+  left: 0;
+}
+
+.checkpoint:nth-child(even)::before {
+  right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+  content: '';
+  background: #fff;
+  box-shadow: 0 0 0.5em #828383;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+  left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+  right: -0.5em;
+} 
+
+@media screen and (max-width: 1150px){
+  .timeLineContainer {
+    width: 80vw;
+  }
+
+  .timeLineContainer .checkpoint {
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+
+  .timeLineContainer .checkpoint::before {
+    width: 3px;
+    height: 4em;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeLineContainer .checkpoint div::before {
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .descriptionsContainer h2 {
+    font-size: 16px;
+  }
+
+  .descriptionsContainer h4 {
+    font-size: 13px;
+  }
+
+  .descriptionsContainer p{
+    font-size: 11px;
+  }
+}
