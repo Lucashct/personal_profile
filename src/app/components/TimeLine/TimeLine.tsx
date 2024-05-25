@@ -5,7 +5,7 @@ export default function TimeLine({isEnglish}: {isEnglish: boolean}) {
   return (
     <div className={styles.container}>
       <div className={styles.title} id='time-line'>
-        <h1>{'> Minha experiência / Formação'}</h1>
+        <h1>{isEnglish ? TEXT_CONTENT.experience.title.en : TEXT_CONTENT.experience.title.pt_br}</h1>
       </div>
 
       <div className={styles.timeLineContainer}>

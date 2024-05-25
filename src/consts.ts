@@ -39,8 +39,8 @@ export const TEXT_CONTENT = {
 
   experience: {
     title: {
-      pt_br: 'Minha experiência / Formação',
-      en: 'My experience / Education'
+      pt_br: '> Minha experiência / Formação',
+      en: '> My experience / Education'
     },
     square1: {
       title: {
@@ -87,6 +87,10 @@ export const TEXT_CONTENT = {
   },
 
   projects: {
+    title: {
+      pt_br: '> Projetos',
+      en: '> Projects'
+    },
     project1: {
       title: {
         pt_br: 'Teste Youx',

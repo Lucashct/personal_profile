@@ -10,7 +10,7 @@ export default function Projects({isEnglish}: {isEnglish:boolean}) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>{'> Projetos'}</h1>
+        <h1>{isEnglish ? TEXT_CONTENT.projects.title.en : TEXT_CONTENT.projects.title.pt_br}</h1>
       </div>
 
       <div className={styles.projectsContainer}>
