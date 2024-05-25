@@ -1,16 +1,17 @@
 import styles from './presentation.module.css'
+import { TEXT_CONTENT } from '@/consts'
 
-export default function Presentation() {
+export default function Presentation({ isEnglish }: {isEnglish: boolean}) {
 
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>{'> Resumo'}</h1>
+        <h1>{isEnglish ? TEXT_CONTENT.presentation.title.en : TEXT_CONTENT.presentation.title.pt_br}</h1>
         <div className={styles.resume}>
-          <p>Olá! Sou o Lucas, um apaixonado por tecnologia desde a adolescência. Minha formação técnica em desenvolvimento de sistemas pelo Instituto de Tecnologia do Piauí me proporcionou uma base sólida em programação e design de sistemas.</p>
-          <p>Tenho {`${new Date().getFullYear() - 2021} anos`} anos de experiência em desenvolvimento web, atuando tanto no front-end quanto no back-end. Trabalho com tecnologias como HTML, CSS, JavaScript, Node.js e Java, sempre buscando criar soluções eficazes e inovadoras.</p>
-          <p>O que mais amo na minha profissão são os desafios que ela oferece. Superar obstáculos e ver os projetos ganharem vida me enche de entusiasmo e me motiva a continuar aprendendo e crescendo.</p>
-          <p>Se você compartilha essa paixão por tecnologia ou tem um projeto desafiador, vamos nos conectar e criar algo incrível juntos!</p>
+          <p>{isEnglish ? TEXT_CONTENT.presentation.p1.en : TEXT_CONTENT.presentation.p1.pt_br}</p>
+          <p>{isEnglish ? TEXT_CONTENT.presentation.p2.en : TEXT_CONTENT.presentation.p2.pt_br}</p>
+          <p>{isEnglish ? TEXT_CONTENT.presentation.p3.en : TEXT_CONTENT.presentation.p3.pt_br}</p>
+          <p>{isEnglish ? TEXT_CONTENT.presentation.p4.en : TEXT_CONTENT.presentation.p4.pt_br}</p>
         </div>
       </div>
     </div>

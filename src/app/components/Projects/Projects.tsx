@@ -2,10 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiagramProject, faLink } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import styles from './projects.module.css'
+import { TEXT_CONTENT } from '@/consts'
 
 library.add(faDiagramProject, faLink)
 
-export default function Projects() {
+export default function Projects({isEnglish}: {isEnglish:boolean}) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -21,18 +22,16 @@ export default function Projects() {
               width={15}
               height={15}
             />
-            <h4>Teste Youx</h4>
+            <h4>{isEnglish ? TEXT_CONTENT.projects.project1.title.en : TEXT_CONTENT.projects.project1.title.pt_br}</h4>
           </div>
           <div className={styles.projectContent}>
-            <p>Teste qualificatório para a empresa Youx</p>
+            <p>{isEnglish ? TEXT_CONTENT.projects.project1.p1.en : TEXT_CONTENT.projects.project1.p1.pt_br}</p>
             <p>
-              Sistema cadastral com foco em reproduzir um CRUD de cadastro de pacientes enfermeiros e médicos,
-              permite também observar quantos pacientes foram cadastrados em cada estado do Brasil com a biblioteca
-              de mapas Leaflet
+             {isEnglish ? TEXT_CONTENT.projects.project1.p2.en : TEXT_CONTENT.projects.project1.p2.pt_br}
             </p>
             <p style={{ display: 'flex', flexDirection: 'column' }}>
-              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/testeyoux-react-font-end"><FontAwesomeIcon icon={faLink} width={12} height={12}/> Repositório Font-End</a> 
-              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/testeyoux-spring-boot"><FontAwesomeIcon icon={faLink} width={12} height={12}/> Repositório Back-End</a>
+              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/testeyoux-react-font-end"><FontAwesomeIcon icon={faLink} width={12} height={12}/>{isEnglish ? TEXT_CONTENT.projects.project1.repository1.en : TEXT_CONTENT.projects.project1.repository1.pt_br}</a> 
+              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/testeyoux-spring-boot"><FontAwesomeIcon icon={faLink} width={12} height={12}/>{isEnglish ? TEXT_CONTENT.projects.project1.repository2.en : TEXT_CONTENT.projects.project1.repository2.pt_br}</a>
             </p>
           </div>
           <div className={styles.techContent}>
@@ -53,13 +52,12 @@ export default function Projects() {
             <h4>Match Making</h4>
           </div>
           <div className={styles.projectContent}>
-            <p>Sistema de match making para o jogo League of Legends.</p>
+            <p>{isEnglish ? TEXT_CONTENT.projects.project2.p1.en : TEXT_CONTENT.projects.project2.p1.pt_br}</p>
             <p>
-              Desenvolvido com React JS, uma plataforma que se conecta API REST disponibilizada pela RIOT GAMES
-              permite selecionar 10 jogadores da própria base de dados do jogo e balancear em dois times.
+            {isEnglish ? TEXT_CONTENT.projects.project2.p2.en : TEXT_CONTENT.projects.project2.p2.pt_br}
             </p>
             <p style={{ display: 'flex', flexDirection: 'column' }}>
-              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/PersonalizadaLoL"><FontAwesomeIcon icon={faLink} width={12} height={12}/> Repositório</a> 
+              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/PersonalizadaLoL"><FontAwesomeIcon icon={faLink} width={12} height={12}/>{isEnglish ? TEXT_CONTENT.projects.project2.repository1.en : TEXT_CONTENT.projects.project2.repository1.pt_br}</a> 
             </p>
           </div>
           <div className={styles.techContent}>
@@ -76,17 +74,16 @@ export default function Projects() {
               width={15}
               height={15}
             />
-            <h4>Teste Devnology</h4>
+            <h4>{isEnglish ? TEXT_CONTENT.projects.project3.title.en : TEXT_CONTENT.projects.project3.title.pt_br}</h4>
           </div>
           <div className={styles.projectContent}>
-            <p>Teste qualificatório da empresa Devnology</p>
+            <p>{isEnglish ? TEXT_CONTENT.projects.project3.p1.en : TEXT_CONTENT.projects.project3.p1.pt_br}</p>
             <p>
-              Sistema de webscraping com a biblioteca JS puppeteer, o desafio consistia em criar uma página web
-              alimentada por um back-end que varria seu website favorito salvando alguns posts em um banco de dados.
+              {isEnglish ? TEXT_CONTENT.projects.project3.p2.en : TEXT_CONTENT.projects.project3.p2.pt_br}
             </p>
             <p style={{ display: 'flex', flexDirection: 'column' }}>
-              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/MyFavBlogsPostApp-Frontend"><FontAwesomeIcon icon={faLink} width={12} height={12}/> Repositório Font-End</a> 
-              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/MyFavBlogsPostApp-Backend"><FontAwesomeIcon icon={faLink} width={12} height={12}/> Repositório Back-End</a>
+              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/MyFavBlogsPostApp-Frontend"><FontAwesomeIcon icon={faLink} width={12} height={12}/>{isEnglish ? TEXT_CONTENT.projects.project3.repository1.en : TEXT_CONTENT.projects.project3.repository1.pt_br}</a> 
+              <a target='_blank' rel="noreferrer" href="https://github.com/Lucashct/MyFavBlogsPostApp-Backend"><FontAwesomeIcon icon={faLink} width={12} height={12}/>{isEnglish ? TEXT_CONTENT.projects.project3.repository2.en : TEXT_CONTENT.projects.project3.repository2.pt_br}</a>
             </p>
           </div>
           <div className={styles.techContent}>
