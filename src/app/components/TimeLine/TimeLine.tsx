@@ -13,7 +13,7 @@ export default function TimeLine({isEnglish}: {isEnglish: boolean}) {
           <div className={styles.descriptionsContainer}>
             <h2>{isEnglish ? TEXT_CONTENT.experience.square1.title.en : TEXT_CONTENT.experience.square1.title.pt_br}</h2>
             <h4>{isEnglish ? TEXT_CONTENT.experience.square1.sub_title.en : TEXT_CONTENT.experience.square1.sub_title.pt_br}</h4>
-            <p>{isEnglish ? TEXT_CONTENT.experience.square1.description.en : TEXT_CONTENT.experience.square1.description.en}</p>
+            <p>{isEnglish ? TEXT_CONTENT.experience.square1.description.en : TEXT_CONTENT.experience.square1.description.pt_br}</p>
           </div>
         </div>
 
@@ -21,7 +21,7 @@ export default function TimeLine({isEnglish}: {isEnglish: boolean}) {
           <div className={styles.descriptionsContainer}>
             <h2>{isEnglish ? TEXT_CONTENT.experience.square2.title.en : TEXT_CONTENT.experience.square2.title.pt_br}</h2>
             <h4>{isEnglish ? TEXT_CONTENT.experience.square2.sub_title.en : TEXT_CONTENT.experience.square2.sub_title.pt_br}</h4>
-            <p>{isEnglish ? TEXT_CONTENT.experience.square2.description.en : TEXT_CONTENT.experience.square2.description.en}</p>
+            <p>{isEnglish ? TEXT_CONTENT.experience.square2.description.en : TEXT_CONTENT.experience.square2.description.pt_br}</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ export default function TimeLine({isEnglish}: {isEnglish: boolean}) {
           <div className={styles.descriptionsContainer}>
             <h2>{isEnglish ? TEXT_CONTENT.experience.square3.title.en : TEXT_CONTENT.experience.square3.title.pt_br}</h2>
             <h4>{isEnglish ? TEXT_CONTENT.experience.square3.sub_title.en : TEXT_CONTENT.experience.square3.sub_title.pt_br}</h4>
-            <p>{isEnglish ? TEXT_CONTENT.experience.square3.description.en : TEXT_CONTENT.experience.square3.description.en}</p>
+            <p>{isEnglish ? TEXT_CONTENT.experience.square3.description.en : TEXT_CONTENT.experience.square3.description.pt_br}</p>
           </div>
         </div>
       </div>
