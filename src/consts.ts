@@ -148,6 +148,26 @@ export const TEXT_CONTENT = {
         pt_br: ' Repositório Back-End',
         en: ' Back-End repository'
       }
+    },
+
+    project4: {
+      title: 'Coust App',
+      p1: {
+        pt_br: 'Aplicação para controle financeiro das contas do mês.',
+        en: 'Application for financial control of monthly accounts.'
+      },
+      p2: {
+        pt_br: 'Sistema para gerenciamento de contas pessoais feitas no mes, o sistema permite o cadastro de usuarios usando uma conta google ou criando uma conta diretamente na base de dados. Possibilita tambem cadastrar contas feitas em cartao de credito, parceladas ou a vista.',
+        en: 'System for managing personal accounts made per month, the system allows users to register using a Google account or creating an account directly in the database. It also allows you to register accounts made by credit card, in installments or in cash.'
+      },
+      repository1: {
+        pt_br: ' Repositório Front-End',
+        en: ' Front-end repository'
+      },
+      repository2: {
+        pt_br: ' Repositório Back-End',
+        en: ' Back-End repository'
+      }
     }
   }
 }
