@@ -167,6 +167,10 @@ export const TEXT_CONTENT = {
       repository2: {
         pt_br: ' Repositório Back-End',
         en: ' Back-End repository'
+      },
+      prod_link: {
+        pt_br: ' Link de teste',
+        en: ' Test app link'
       }
     }
   }
